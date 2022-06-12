@@ -1,0 +1,35 @@
+.root {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.root h1,
+.root h4,
+.root p {
+  text-align: center;
+}
+
+.root h4 {
+  color: var(--textSecondary);
+}
+
+.members {
+  margin-top: 5rem;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+  .members {
+    gap: 10px;
+  }
+}
+
+.profession {
+  padding: 0;
+  margin: 0;
+  color: var(--textSecondary);
+  font-size: 0.9rem;
+}

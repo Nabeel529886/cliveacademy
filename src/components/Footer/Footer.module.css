@@ -1,0 +1,57 @@
+.root {
+  margin: 40px 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.root ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.root ul li {
+  padding: 2px 0px;
+}
+
+.root .newsletter {
+  flex: 2;
+  width: 200px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  border-radius: 20px;
+  position: relative;
+}
+
+.root .newsletter input[type="email"] {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  text-indent: 10px;
+  color: var(--textPrimary);
+  background-color: #6878be4d;
+  border: none;
+  border-radius: 20px;
+  text-overflow: clip;
+}
+
+.root .newsletter input[type="email"]:focus {
+  outline: none;
+}
+
+.root .newsletter button {
+  align-self: flex-start;
+  position: absolute;
+  padding: 10px 10px;
+  bottom: 0%;
+  right: -10%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  color: var(--textPrimary);
+  background: var(--gradient);
+}
+
+@media screen and (max-width: 600px) {
+}

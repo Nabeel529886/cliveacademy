@@ -1,0 +1,61 @@
+.root {
+}
+
+.mainContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .mainContainer {
+    flex-direction: column-reverse;
+  }
+}
+
+.textSection {
+}
+
+.textSection h1 {
+  font-size: 4rem;
+  font-family: "Outfit";
+  margin: 0;
+  padding: 0;
+}
+
+.textSection p {
+  font-size: 1.1rem;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.textSection button {
+  background-color: var(--primary);
+  color: var(--textPrimary);
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  /* margin-top: 10px; */
+  border-radius: 20px;
+}
+
+.imageSection {
+}
+
+.sponsors {
+}
+
+.sponsors h4 {
+  font-weight: 400;
+}
+
+.sponsorsList {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--bgSecondary);
+}
+
+.sponsorsList img {
+  height: 30px;
+}

@@ -1,0 +1,55 @@
+.root {
+}
+
+.explore,
+.business,
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+:is(.explore, .app, .business) .content {
+  width: 400px;
+}
+
+:is(.explore, .app, .business) .content p {
+  color: var(--textSecondary);
+}
+
+.explore button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  border-radius: 20px;
+  color: var(--textPrimary);
+}
+
+:is(.app, .business) .content button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid var(--primary);
+  background-color: transparent;
+  color: var(--textPrimary);
+  margin-top: 20px;
+}
+
+.app {
+  flex-direction: row-reverse;
+}
+
+/* .business {
+} */
+
+:is(.explore, .business, .app) .imgContainer img {
+  width: 400px;
+}
+
+@media screen and (max-width: 600px) {
+  .explore,
+  .business,
+  .app {
+    flex-direction: column;
+  }
+}
